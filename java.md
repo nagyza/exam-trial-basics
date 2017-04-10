@@ -32,4 +32,8 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: 
+    Use Math.random() method.
+    This generate a semi random number between 0 (inclusive) and 1 (exclusive)
+    If I need a whole random number it has to be written as you see below:
+    int randomNumber = (int) (Math.random() * 10) + 1
