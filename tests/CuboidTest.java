@@ -18,4 +18,15 @@ public class CuboidTest {
     assertEquals(2200, box.getSurface());
   }
 
+  @Test
+  public void getVolumeCube10() throws Exception {
+    Cuboid box = new Cuboid(10, 10, 10);
+    assertEquals(1000, box.getVolume());
+  }
+
+  @Test
+  public void getVolumeCube10and20and30() throws Exception {
+    Cuboid box = new Cuboid(10, 20, 30);
+    assertEquals(6000, box.getVolume());
+  }
 }
