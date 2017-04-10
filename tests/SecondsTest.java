@@ -17,6 +17,6 @@ public class SecondsTest {
         testListSeconds.add(Integer.toString(i));
       }
     }
-    assertTrue(seconds.selectSecondElements(testListAll) == testListAll);
+    assertEquals(seconds.selectSecondElements(testListAll), testListSeconds);
   }
 }
