@@ -32,6 +32,7 @@ public class CountAs {
     try {
       this.lines = Files.readAllLines(filePath);
     } catch (IOException e) {
+      System.out.println("This file doesn't exist.");
       this.lines = null;
     }
   }
