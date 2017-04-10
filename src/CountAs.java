@@ -13,10 +13,10 @@ public class CountAs {
   public int countAsInFile(String fileName) {
     numberOfAs = 0;
     readFile(fileName);
-    String toCheckAs = buildOneString(this.lines).toString();
     if (this.lines == null) {
       this.numberOfAs = 0;
     } else {
+      String toCheckAs = buildOneString(this.lines).toString();
       for (int i = 0; i < toCheckAs.length(); i++) {
         if (toCheckAs.charAt(i) == 'a') {
           this.numberOfAs++;
