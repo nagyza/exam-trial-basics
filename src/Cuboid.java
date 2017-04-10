@@ -9,4 +9,8 @@ public class Cuboid {
     this.sideB = sideB;
     this.sideC = sideC;
   }
+
+  public int getSurface() {
+    return 2 * (sideA * sideB + sideB * sideC + sideA * sideC);
+  }
 }
