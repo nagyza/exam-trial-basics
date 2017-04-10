@@ -14,6 +14,15 @@ public class CountAs {
     numberOfAs = 0;
     readFile(fileName);
     String toCheckAs = buildOneString(this.lines).toString();
+    if (this.lines == null) {
+      this.numberOfAs = 0;
+    } else {
+      for (int i = 0; i < toCheckAs.length(); i++) {
+        if (toCheckAs.charAt(i) == 'a') {
+          this.numberOfAs++;
+        }
+      }
+    }
     return this.numberOfAs;
   }
 
