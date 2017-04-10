@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CountAs {
-  private String fileName;
   private int numberOfAs;
   private Path filePath;
   private List<String> lines;
 
   public int countAsInFile(String fileName) {
-    if ()
+    numberOfAs = 0;
+    readFile(fileName);
+    String toCheckAs = buildOneString(this.lines).toString();
     return this.numberOfAs;
   }
 
@@ -24,5 +25,13 @@ public class CountAs {
     } catch (IOException e) {
       this.lines = null;
     }
+  }
+
+  public StringBuilder buildOneString(List<String> lines) {
+    StringBuilder textInFile = new StringBuilder();
+    for (String line : lines) {
+      textInFile.append(line);
+    }
+    return textInFile;
   }
 }
